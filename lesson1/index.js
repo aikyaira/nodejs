@@ -41,20 +41,24 @@ const whatColorIs = (from, to) => {
 }
 
 const checkTypesError = (args) => {
+  let error = false;
   for (i = 0; i < args.length; i++) {
     if (isNaN(parseFloat(args[i]))) {
-      throw new TypeError("Аргумент " + args[i] + " не число!");
+      console.log(red("Аргумент " + args[i] + " не число!"));
+      error = true;
     }
   }
+  return error;
 };
 
 
 const from = process.argv[2];
 const to = process.argv[3];
 
-checkTypesError([from, to]);
-if(from<=to){
-  whatColorIs(from, to);
-}else{
-  console.log(red("Первый аргумент должен быть меньше либо равен второму."));
+if (!checkTypesError([from, to])) {
+  if (from <= to) {
+    whatColorIs(from, to);
+  } else {
+    console.log(red("Первый аргумент должен быть меньше либо равен второму."));
+  }
 }

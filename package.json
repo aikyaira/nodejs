@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lesson1": "node lesson1/index.js",
+    "lesson2": "node lesson2/2.js",
+    "lesson3": "node lesson3/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

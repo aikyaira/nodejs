@@ -7,6 +7,7 @@
     "lesson1": "node lesson1/index.js",
     "lesson2": "node lesson2/2.js",
     "lesson3": "node lesson3/index.js",
+    "lesson4": "node lesson4/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,8 @@
   },
   "homepage": "https://github.com/aikyaira/nodejs#readme",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "inquirer": "^8.2.4",
+    "yargs": "^17.5.1"
   }
 }

@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "lesson1": "node lesson1/index.js",
     "lesson2": "node lesson2/2.js",
     "lesson3": "node lesson3/index.js",
     "lesson4": "node lesson4/index.js",
+    "lesson5": "node lesson5/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

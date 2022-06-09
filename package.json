@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "lesson1": "node lesson1/index.js",
     "lesson2": "node lesson2/2.js",
     "lesson3": "node lesson3/index.js",
     "lesson4": "node lesson4/index.js",
+    "lesson5": "node lesson5/index.js",
+    "lesson6": "node lesson6/index.js",
+    "lesson3_workers": "node lesson3_workers/index.js",
+    "lesson3_cli": "node lesson3_workers/cli.js",
+    "lesson4_workers": "node lesson4_workers/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +29,9 @@
   "dependencies": {
     "colors": "^1.4.0",
     "inquirer": "^8.2.4",
+    "nodemon": "^2.0.16",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1",
     "yargs": "^17.5.1"
   }
 }
